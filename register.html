@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="images/This video explains how blockchain technology….jpg" alt="Image">
+        </div>
+        <div class="form-section">
+            <form id="registerForm" onsubmit="handleSubmit(event)">
+                <h2>Register to Vote</h2>
+                <p>Sign up on the form to participate in the next election</p>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <br>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <br>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+                <br>
+                <label for="identificationNumber">National Identification Number (NIN)</label>
+                <input type="number" id="identificationNumber" name="identificationNumber" required>
+                <br>
+                <label for="state">State</label>
+                <select id="state" name="state" required>
+                    <option value="" disabled selected>Select a state</option>
+                    <option value="Abia">Abia</option>
+                    <option value="Adamawa">Adamawa</option>
+                    <option value="Akwa Ibom">Akwa Ibom</option>
+                    <option value="Anambra">Anambra</option>
+                    <option value="Bauchi">Bauchi</option>
+                    <option value="Bayelsa">Bayelsa</option>
+                    <option value="Benue">Benue</option>
+                    <option value="Borno">Borno</option>
+                    <option value="Cross River">Cross River</option>
+                    <option value="Delta">Delta</option>
+                    <option value="Ebonyi">Ebonyi</option>
+                    <option value="Edo">Edo</option>
+                    <option value="Ekiti">Ekiti</option>
+                    <option value="Enugu">Enugu</option>
+                    <option value="Gombe">Gombe</option>
+                    <option value="Imo">Imo</option>
+                    <option value="Jigawa">Jigawa</option>
+                    <option value="Kaduna">Kaduna</option>
+                    <option value="Kano">Kano</option>
+                    <option value="Katsina">Katsina</option>
+                    <option value="Kebbi">Kebbi</option>
+                    <option value="Kogi">Kogi</option>
+                    <option value="Kwara">Kwara</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Nasarawa">Nasarawa</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Ogun">Ogun</option>
+                    <option value="Ondo">Ondo</option>
+                    <option value="Osun">Osun</option>
+                    <option value="Oyo">Oyo</option>
+                    <option value="Plateau">Plateau</option>
+                    <option value="Rivers">Rivers</option>
+                    <option value="Sokoto">Sokoto</option>
+                    <option value="Taraba">Taraba</option>
+                    <option value="Yobe">Yobe</option>
+                    <option value="Zamfara">Zamfara</option>
+                    <option value="FCT">Federal Capital Territory (Abuja)</option>
+                </select>
+                <br>
+                <label for="walletAddress">Wallet Address</label>
+                <input type="text" id="walletAddress" name="walletAddress" readonly>
+                <button type="button" id="connectWallet">Connect Wallet</button>
+                <br>
+                <br>
+                <button type="submit" id="submitBtn" disabled>Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> ae523eef1db8dbf19f1d2e7f9e13ded8

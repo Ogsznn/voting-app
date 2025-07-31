@@ -1,113 +1,462 @@
-body {
-  background: #f4f8fb;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-.container {
-  background: #fff;
-  max-width: 700px;
-  margin: 3rem auto;
-  padding: 2rem 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(44,62,80,0.08);
-}
-a{
-  color: #fff;
-  text-decoration: none;
-}
-h2 {
-  color: #444;
-  text-align: center;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  letter-spacing: 1px;
-}
-h3{
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-ul {
-  margin-left: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-li {
-  margin-bottom: 0.7rem;
-  font-size: 1.08rem;
-}
-p {
-  color: #444;
-  font-size: 1.1rem;
-}
-.team-section {
-  margin: 2rem 0;
-}
-.team-section h3 {
-  margin-bottom: 1rem;
-  color: #444;
-}
-.team-members {
-  display: flex;
-  gap: 2rem;
-  justify-content: center; 
-  align-items: center;
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 94vw;
+    top: 0;
+    z-index: 1000;
 }
 
-.member {
-  display: flex;
-  flex-direction: column;   
-  align-items: center;      
-  text-align: center;
+#sign-up{
+        display: inline-block;
+    padding: 15px 30px;
+    background-color: #6c757d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-
-.member2 {
-  display: flex;
-  flex-direction: row;   
-  align-items: center;      
-  text-align: center;
+section{
+    height: 100vh;
 }
 
-.member img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 0.5rem;
-  border: 2px solid #000;
+.logo h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #000;
 }
-.member span {
-  color: #888;
-  font-size: 0.95rem;
+
+.logo span {
+    font-size: 1.2em;
+    margin-left: 10px;
 }
-.footer {
-  margin-top: 2rem;
-  font-size: 0.98rem;
-  color: #888;
-  text-align: right;
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
-button {
-  display: block;
-  margin: 2rem auto 0 auto; 
-  padding: 0.7rem 1.5rem;
-  background: #444;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.2s;
-  text-align: center;
+
+nav ul li {
+    margin: 0 15px;
 }
-button:hover {
-  background:#141414;
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
 }
-#logicSection {
-  margin-top: 1.5rem;
-  background: #f0f4fa;
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  color: #222;
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 50px;
+    text-align: center;
+    background-color: #f4f4f4;
 }
-.hidden {
-  display: none;
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.btn-register{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.cta-buttons .btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.cta-buttons .btn.primary {
+    background-color: #007bff;
+}
+
+.cta-buttons .btn.secondary {
+    background-color: #6c757d;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.features p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Why Blockchain Section */
+.why-blockchain {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.why-blockchain h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.why-blockchain p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.stat-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.stat-item span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.stat-item p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.how-it-works p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.step-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.step-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.step-card h3 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.step-card h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.step-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Registration Section */
+form {
+    padding: 2px; /* Keep minimal padding for the form element */
+}
+
+.registration {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    height: 120vh; /* Changed from height: 150vh to ensure it fits at least one viewport height */
+}
+
+.registration h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.registration p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.registration-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    /* Removed height: 100vh to allow natural sizing */
+    margin-bottom: 1.5rem; /* Reduced from 35px to avoid excessive spacing */
+}
+
+.form-group label,
+.form-group input,
+.form-group select,
+.form-group button {
+    display: block; /* Ensures elements stack vertically */
+    margin-bottom: 1rem; /* Consistent spacing between elements */
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Remove margin-bottom from the last button to avoid extra space at the end */
+.form-group button:last-child {
+    margin-bottom: 0;
+}
+
+/* Optional: Style buttons for better appearance */
+.form-group button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Example color */
+    color: white;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.upload-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.upload-area input {
+    display: none;
+}
+
+.checkboxes div {
+    margin-top: 10px;
+}
+
+.checkboxes input {
+    margin-right: 10px;
+}
+
+.wallet-options button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Election Info Section */
+.election-info {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.election-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.election-info p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.info-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.info-card li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    /* background-color: #333; */
+    color: #000;
+    padding: 50px 20px;
+    text-align: center;
+    height: 40vh
+}
+
+ul{
+    list-style-type: none;
+}
+
+li img{
+    width: 20px;
+    height: 20px;
+
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-logo h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    font-size: 0.8em;
+    margin-top: 20px;
 }

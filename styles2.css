@@ -12,6 +12,15 @@ header {
     z-index: 1000;
 }
 
+#sign-up{
+        display: inline-block;
+    padding: 15px 30px;
+    background-color: #6c757d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 section{
     height: 100vh;
 }
@@ -46,10 +55,13 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 100px 20px 50px;
     text-align: center;
     background-color: #f4f4f4;
-    margin-top: 60px;
 }
 
 .hero h2 {
@@ -63,6 +75,14 @@ nav ul li a {
     margin: 0 auto 30px;
 }
 
+.btn-register{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
 .cta-buttons .btn {
     padding: 10px 20px;
     margin: 0 10px;
@@ -207,13 +227,14 @@ nav ul li a {
 }
 
 /* Registration Section */
-form{
-    height: 70vh;
-    padding: 2px;
+form {
+    padding: 2px; /* Keep minimal padding for the form element */
 }
+
 .registration {
     padding: 50px 20px;
     background-color: #f4f4f4;
+    height: 120vh; /* Changed from height: 150vh to ensure it fits at least one viewport height */
 }
 
 .registration h2 {
@@ -222,7 +243,7 @@ form{
     text-align: center;
 }
 
-h3{
+h3 {
     text-align: center;
 }
 
@@ -238,7 +259,7 @@ h3{
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .registration-form h3 {
@@ -247,12 +268,19 @@ h3{
 }
 
 .form-group {
-    margin-bottom: 15px;
-    
+    /* Removed height: 100vh to allow natural sizing */
+    margin-bottom: 1.5rem; /* Reduced from 35px to avoid excessive spacing */
+}
+
+.form-group label,
+.form-group input,
+.form-group select,
+.form-group button {
+    display: block; /* Ensures elements stack vertically */
+    margin-bottom: 1rem; /* Consistent spacing between elements */
 }
 
 .form-group label {
-    display: block;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -263,6 +291,25 @@ h3{
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+/* Remove margin-bottom from the last button to avoid extra space at the end */
+.form-group button:last-child {
+    margin-bottom: 0;
+}
+
+/* Optional: Style buttons for better appearance */
+.form-group button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Example color */
+    color: white;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
 .upload-area {
@@ -350,10 +397,21 @@ h3{
 
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    /* background-color: #333; */
+    color: #000;
     padding: 50px 20px;
     text-align: center;
+    height: 40vh
+}
+
+ul{
+    list-style-type: none;
+}
+
+li img{
+    width: 20px;
+    height: 20px;
+
 }
 
 .footer-content {
@@ -394,7 +452,7 @@ footer {
 }
 
 .footer-links a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 

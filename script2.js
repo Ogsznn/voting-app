@@ -20,3 +20,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+// Your existing code (if any)
+console.log('Script loaded');
+
+// Debug Privy SDK
+console.log('Privy available:', typeof Privy); // Should log "function"
+
+const privy = new Privy({
+  appId: 'cmdksnrig000ll40jcsx4kx6r', // Replace with your actual App ID
+});
+
+async function connectWallet(event) {
+  event.preventDefault(); // Prevent page reload
+  try {
+    await privy.login(); // Should open login modal
+    document.getElementById('connect-wallet').textContent = 'Connected';
+    console.log('Wallet connected!');
+  } catch (error) {
+    console.error('Connection failed:', error);
+    alert('Failed to connect wallet.');
+  }
+}
+
+// Attach event listener
+document.getElementById('connect-wallet').addEventListener('click', connectWallet);

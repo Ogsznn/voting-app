@@ -1,81 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Decentralized Voting System</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOTENA - Decentralized Voting Platform</title>
+    <script src="https://unpkg.com/@privy-io/js-sdk@latest"></script>
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-  
-</body>
-</html><body>
-  <div class="container">
     <header>
-      <h2>Lotena</h2>
-      <p class="subtitle">
-        Elections in Africa and Nigeria in particular have been plagued by issues of fraud, manipulation, and lack of transparency. There is no more transparency in the system. No one knows what happens to their votes after casting them. Voices are cast into the dustbin of history. The power is no longer with the people but with those in power. This is a raging problem in our society which has cost us years of bad governance and poor leadership. We are here to change the narrative. 
-        <br>
-        <br> 
-        <strong>Lotena</strong> is a decentralized voting system built on the solana blockchain. Our sole aim is to provide a service whereby elections are truly free, fair and transparent. We are building a system that will ensure that every vote counts and is verifiable by anyone, anywhere, anytime. We are building a system that will ensure that the power is returned to the people. We are building a system that will ensure that the voices of the people are heard and respected.  
-      </p>
+        <div class="logo">
+            <h1>Lotena</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#why-blockchain">Why Blockchain?</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#registration">Registration</a></li>
+            </ul>
+        </nav>
+         <a href="#registration" id="sign-up" class=" btn-register">Register Now</a>
     </header>
 
-    <section class="features">
-      <h3>Key Features of Lotena</h3>
-      <ul>
-        <li><strong>Registration:</strong> At Lotena, we dont need voters to queue up at any office to get registered for the election, rather we do it online. This makes the registration process seamless for everyone to do and at a convenient time for evryone.</li>
-        <li><strong>Age Verification:</strong> Lotena ensures that the registered voters are eligible to vote by beinging 18 years old and above. </li>
-          <li><strong>Voting Tools:</strong> Lotena makes the voting process COMPLETELY FREE for all involved by doing it on-chain.</li>
-        <li><strong>Transparency:</strong> Lotena ensures that all votes that are cast in an election are recorded on the blockchain for auditability.</li>
-        <li><strong>Results:</strong> Lotena utilises the fast and accurate characteristic of the computer to deliver election results in real-time and a tamper-proof result display which can be accessed by anyone, anywhere, anytime.</li>
-      </ul>
-    </section>
-
-    <section class="how-it-works">
-      <h3>How It Works</h3>
-      <ol>
-        <li>Register for the election with your details.&nbsp;<img src="right-arrow.png" alt="Right Arrow" width="15" height="12"></li>
-        <li>Users above 18 years of age will be allowed to vote.&nbsp;<img src="right-arrow.png" alt="Right Arrow" width="15" height="12"></li>
-        <li>Access the voting platform.&nbsp;<img src="right-arrow.png" alt="Right Arrow" width="15" height="12"></li>
-        <li>Cast your vote securely and anonymously.&nbsp;<img src="right-arrow.png" alt="Right Arrow" width="15" height="12"></li>
-        <li>View live results and audit the process on-chain.</li>
-      </ol>
-    </section>
-
-    <section class="why-blockchain">
-      <h3>Why Blockchain Technology?</h3>
-      <p>
-        We at Lotena believe that the better question should be why not blockchain technology? We have been living in centralization for a long time and it hasn't profited us much in elections most especially in Africa and Nigeria. Blockchain technology provides a solution to the problems we face in elections today. It ensures that the voting process is transparent, secure, and tamper-proof. With blockchain technology, we can do away with the issues of fraud, manipulation, and lack of transparency that has been a nuisance in our elections. Finally, the power is returned to the people.  
-      </p>
-    </section>
-
-    <section class="team-section">
-      <h3>Meet the Team</h3>
-      <div class="team-members">
-        <div class="member">
-          <img src="PFP.png" alt="Team Member 1">
-          <p>@ogszn_<br><span>Frontend Developer</span></p>
+    <section id="home" class="hero">
+        <h2>Lotena</h2>
+        <p>Secure. Transparent. Decentralized</p>
+        <div class="cta-buttons">
+            <a href="#registration" class="btn-register">Register Now</a>
         </div>
-        <div class="member">
-          <img src="pfp 2.jpg" alt="Team Member 2">
-          <p>@x0zaram<br><span>Blockchain Developer</span></p>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Main Features</h2>
+        <p>Discover the advantages of our revolutionary voting platform</p>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Maximum Security</h3>
+                <p>Advanced fraud protection through blockchain technology and cutting-edge cryptography.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Guaranteed Anonymity</h3>
+                <p>Your vote remains confidential while being verifiable on the public blockchain.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Real-Time Results</h3>
+                <p>Follow election results live with full transparency.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Mobile Access</h3>
+                <p>Vote from the comfort of your home with your smartphone, tablet, or computer with ease.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Official Documents</h3>
+                <p>Documents used are all within the standard of the country.</p>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="call-to-action">
-      <h3>Ready to Start the Revolution?</h3>
-      <p>
-        Join us in making elections FREE, FAIR AND TRANSPARENT with Blockchain Technology.<br>
-        <button><a href="register.html"> Started </a></button>
-      </p>
+    <section id="why-blockchain" class="why-blockchain">
+       <h2>Why Blockchain for Voting?</h2>
+           <p>Revolutionizing Nigeria's Electoral System</p>
+           <p>Blockchain technology ensures a secure, transparent, and tamper-proof voting process. By leveraging a decentralized, immutable ledger, every vote is permanently recorded, eliminating risks of fraud or manipulation.</p>
+           <p>Built on chain, our platform delivers unmatched scalability, processing millions of votes in real-time with lightning-fast confirmation and minimal costs, making secure and efficient elections a reality for Nigeria.</p>
+        <div class="stats">
+            <div class="stat-item">
+                <span>99.9%</span>
+                <p>System Reliability</p>
+            </div>
+            <div class="stat-item">
+                <span>&lt;1s</span>
+                <p>Confirmation Time</p>
+            </div>
+            <div class="stat-item">
+                <span>0.001$</span>
+                <p>Cost per Transaction</p>
+            </div>
+            <div class="stat-item">
+                <span>100%</span>
+                <p>Verifiable Transparency</p>
+            </div>
+        </div>
     </section>
 
-    <footer class="footer">
-      Built by The Builders  for the Enugu State Campus Hackathon.
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works?</h2>
+        <p>A simple and secure process in 4 steps</p>
+        <div class="step-grid">
+            <div class="step-card">
+                <h3>1</h3>
+                <h4>Registration and Verification</h4>
+                <p>Create your account on the Lotena platform the necessary information, Our system then verifies your eligibility for the election.</p>
+            </div>
+            <div class="step-card">
+                <h3>2</h3>
+                <h4>Secure Authentication</h4>
+                <p>Before the election, each verified voter will receive a unique, non-transferable token that will be used for the election.</p>
+            </div>
+            <div class="step-card">
+                <h3>3</h3>
+                <h4>Anonymous Voting</h4>
+                <p>Vote for your desired candidate on our intuitive interface. Your vote is encrypted and recorded on the blockchain, ensuring your anonymity while preserving vote integrity.</p>
+            </div>
+            <div class="step-card">
+                <h3>4</h3>
+                <h4>Live Results</h4>
+                <p>Follow the count in real-time on our dashboard. Every vote is immediately tallied and publicly visible, with no possibility of alteration.</p>
+            </div>
+        </div>
+    </section>
+
+        <section id="registration" class=" section-2 registration">
+        <h2>Voter Registration</h2>
+        <div class="registration-form">
+            <h3>Registration Form</h3>
+            <form action="" method="get">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" required>
+
+                    <label>Email</label>
+                    <input type="email" required>
+
+                    <label>NIN</label>
+                    <input type="number" required>
+
+                    <label>State</label>
+                    <select required>
+                        <option value="" disabled selected>Select your State</option>
+                        <option value="Abia">Abia</option>
+                        <option value="Adamawa">Adamawa</option>
+                        <option value="Akwa-Ibom">Akwa-Ibom</option>
+                        <option value="Anambra">Anambra</option>
+                        <option value="Bauchi">Bauchi</option>
+                        <option value="Bayelsa">Bayelsa</option>
+                        <option value="Benue">Benue</option>
+                        <option value="Borno">Borno</option>
+                        <option value="Cross-River">Cross-River</option>
+                        <option value="Delta">Delta</option>
+                        <option value="Ebonyi">Ebonyi</option>
+                        <option value="Edo">Edo</option>
+                        <option value="Ekiti">Ekiti</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="Gombe">Gombe</option>
+                        <option value="Imo">Imo</option>
+                        <option value="Jigawa">Jigawa</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Kano">Kano</option>
+                        <option value="Katsina">Katsina</option>
+                        <option value="Kebbi">Kebbi</option>
+                        <option value="Kogi">Kogi</option>
+                        <option value="Kwara">Kwara</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Nasarawa">Nasarawa</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Ogun">Ogun</option>
+                        <option value="Ondo">Ondo</option>
+                        <option value="Osun">Osun</option>
+                        <option value="Oyo">Oyo</option>
+                        <option value="Plateau">Plateau</option>
+                        <option value="Rivers">Rivers</option>
+                        <option value="Sokoto">Sokoto</option>
+                        <option value="Taraba">Taraba</option>
+                        <option value="Yobe">Yobe</option>
+                        <option value="Zamfara">Zamfara</option>
+                        <option value="Federal Capital Territory">Federal Capital Territory</option>
+                    </select>
+
+                    <label>Wallet Address</label>
+                    <input type="text">
+
+                    <button type="button" id="connect-wallet" class="btn submit-btn">Connect Wallet</button>
+                    <br>
+                <button type="submit" class="btn submit-btn">Submit Registration</button>
+                </div>  
+            </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Social Links</h3>
+                <div class="social-links">
+                    <ul>
+                    <li><a href="#"><img src="facebook.png" alt="facebook logo"></a></li>
+                    <li><a href="#"><img src="twitter.png" alt="twitter logo"></a></li>
+                    <li><a href="#"><img src="instagram.png" alt="instagram logo"></a></li>
+                    <li><a href="#"><img src="linkedin-logo.png" alt="linkedin-logo"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#why-blockchain">Why Blockchain?</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#registration">Registration</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copyright">© 2025 Lotena Technologies. All rights reserved.<br>Designed for democracy and transparency in Nigeria.</p>
     </footer>
-  </div>
-  <script type="module" src="/src/main.jsx"></script>
-  <!-- <script src="script.js"></script> -->
+
+    <script src="script.js"></script>
 </body>
+</html>
